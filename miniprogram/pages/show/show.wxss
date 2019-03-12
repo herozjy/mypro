@@ -1,0 +1,25 @@
+.box{
+  padding: 20rpx 40rpx;
+}
+.images_list{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around
+}
+.images_list image{
+  width: 31%;
+  height: 240rpx;
+}
+
+.tip_text text{
+  font-size: 14px;
+  color: #999;
+}
+.content_text{
+    font-size: 16px;
+    color:#333;
+    text-indent: 2rem
+}
+.newsData_list{
+  margin-top: 10px
+}

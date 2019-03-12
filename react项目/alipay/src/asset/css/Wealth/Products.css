@@ -1,0 +1,24 @@
+.Products{
+
+}
+.Products ul{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+.Products ul li{
+    margin-top: 20px;
+    width: 20%;
+}
+.Products ul li i{
+    font-size: 24px;
+}
+.Products_down_arrow{
+    text-align: center;
+   color: #b5b5b5;
+    font-size: 20px;
+    padding: 0 22px;
+
+}

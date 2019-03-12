@@ -1,0 +1,106 @@
+.myuseapp{
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+    border-bottom:8px solid #c8c8c8;
+}
+
+.myuseapp_left{
+    float: left;
+    font-size: 10px;
+    color: #000c17;
+    font-weight: bold;
+}
+.myuseapp_middle{
+    float: left;
+    margin-left: 10px;
+    max-height: 24px;
+    max-width:60%;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+.myuseapp_middle .myuseapp_part{
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.myuseapp_right{
+    float: right;
+    margin-right: 1.2rem;
+}
+
+.myuseapp_right div{
+    padding:2px 8px;
+    font-size: 12px;
+    color: rgb(104, 181, 238);
+    border: 1px solid rgb(104, 181, 238);
+}
+
+
+
+
+
+
+
+.appData{
+    padding: 0.5rem 1rem;
+}
+.appData dl{
+
+}
+.appData dl dt{
+    margin-bottom: 10px;
+    color: #000c17;
+    font-weight: bold;
+}
+.appData dl dd{
+
+}
+.appData dl dd ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.appData dl dd ul li{
+  width: 25%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.appData dl dd ul li{
+    font-size: 12px;
+
+}
+.appData dl dd ul li i{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.appData_part .minus_plus{
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    color: white;
+}
+
+.appData_part .m{
+    width: 14px;
+    height: 14px;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: red;
+    display: block;
+    position: relative;
+    top: -5px;
+    line-height: 12px;
+
+}
+.appData_part .p{
+    width: 14px;
+    height: 14px;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: #69abff;
+    display: block;
+    position: relative;
+    top: -5px;
+    line-height: 12px;
+}

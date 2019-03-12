@@ -1,0 +1,19 @@
+.ShopTip {
+    padding: 10px 0;
+
+}
+.ShopTip a{
+    color: #555555;
+    font-size: 12px;
+}
+.ShopTip .ant-col-4 {
+    text-align: center;
+    padding-top: 2px;
+
+}
+.ShopTip .ant-col-4 .anticon-ant-design{
+    font-size: 30px;
+}
+.ShopTip .ant-col-4 .anticon-right{
+    padding-top: 10px;
+}

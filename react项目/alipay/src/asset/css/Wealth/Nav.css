@@ -1,0 +1,63 @@
+dt,dl,dd{
+    margin: 0;
+    padding: 0;
+}
+
+.Nav_main{
+    overflow: hidden;
+    padding: 10px 20px;
+    background-color: #4f86ff;
+
+}
+.Nav_main_content{
+    overflow: hidden;
+}
+.Nav_main_top{
+
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.Nav_main_top  span:nth-child(1){
+     float: left;
+    color: white;
+ }
+.Nav_main_top  span:nth-child(2){
+    float: right;
+}
+.Nav_main_top span:nth-child(2)  .anticon-search{
+    color: white;
+    font-size: 20px;
+}
+
+
+.Nav_main_content dl{
+    float: left;
+    overflow: hidden;
+    margin-right: 5%;
+}
+.Nav_main_content dl dt{
+    float: left;
+    color: rgba(220, 220, 220, 0.66);
+    margin-right: 15px;
+}
+.Nav_main_content dl dd{
+   font-size: 26px;
+    color: #fff;
+}
+.Nav_main_content_arrow{
+    float: right;
+    color: white;
+    font-size: 26px;
+    padding-top: 10px;
+}
+.Nav_main_footer{
+
+}
+.Nav_main_footer a{
+    color: rgba(220, 220, 220, 0.66);
+    font-size: 13px;
+}
+.Nav_main_footer span:nth-child(1){
+    margin-right: 15px;
+
+}

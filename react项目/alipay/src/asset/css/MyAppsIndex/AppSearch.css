@@ -1,0 +1,22 @@
+.AppSearch{
+    padding: 0.5rem 1rem ;
+    overflow: hidden;
+}
+.AppSearch_arrow{
+    float: left;
+    width: 10%;
+}
+.AppSearch_arrow i{
+    font-size: 20px;
+    padding-top: 5px;
+}
+.AppSearch_search{
+    float: left;
+    width: 80%;
+}
+.AppSearch_search .ant-input-affix-wrapper{
+    width: 100%;
+}
+.AppSearch_search input{
+    background-color: #e9e9e9;
+}

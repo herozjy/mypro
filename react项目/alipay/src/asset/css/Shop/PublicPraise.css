@@ -1,0 +1,14 @@
+.PublicPraise{
+    padding: 0 1.5rem;
+}
+.PublicPraise ul{
+display: flex;
+
+}
+.PublicPraise ul li{
+    width: 25%;
+    padding-right: 5px;
+}
+.PublicPraise ul li img{
+width: 100%;
+}

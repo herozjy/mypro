@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #e44444;
+        }
+        body{
+            background-color: #000;
+        }
+        span{
+            width: 30px;
+            height: 30px;
+            background: url("star.png") no-repeat;
+            position: fixed;
+            animation: flash 4s alternate infinite;
+        }
+       @keyframes flash {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+
+
+           h1{
+             margin-top: 200px;
+             color: #fff;
+               text-align: center;
+               font-size: 22px;
+           }
+           .stage{
+               width: 100px;
+               perspective: 1000px;
+               margin:  auto;
+           }
+        .stage ul{
+               position: relative;
+               transform-style:preserve-3d;
+
+           }
+
+        @keyframes move {
+            0%{
+                transform: rotateY(0deg);
+            }
+            100%{
+                transform: rotateY(360deg);
+            }
+        }
+        .stage:hover{}
+        .stage:hover ul{
+                animation-play-state: paused;
+        }
+        .stage ul li{
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                line-height: 100px;
+                text-align: center;
+                color: #fff;
+
+            }
+        .stage ul li a{
+            color: #fff;
+        }
+        .stage ul li:nth-child(1){
+            transform: rotateY(36deg) translateZ(250px);
+        }
+        .stage ul li:nth-child(2){
+            transform: rotateY(72deg) translateZ(250px);
+        }
+        .stage ul li:nth-child(3){
+            transform: rotateY(108deg) translateZ(250px);
+        }
+        .stage ul li:nth-child(4){
+            transform: rotateY(144deg) translateZ(250px);
+        }
+        .stage ul li:nth-child(5){
+            transform: rotateY(180deg) translateZ(250px);
+        }
+        .stage ul li:nth-child(6){
+            transform: rotateY(216deg) translateZ(250px);
+        }
+        .stage ul li:nth-child(7){
+            transform: rotateY(252deg) translateZ(250px);
+        }
+        .stage ul li:nth-child(8){
+            transform: rotateY(288deg) translateZ(250px);
+        }
+        .stage ul li:nth-child(9){
+            transform: rotateY(324deg) translateZ(250px);
+        }
+        .stage ul li:nth-child(10){
+            transform: rotateY(360deg) translateZ(250px);
+        }
+#btn{
+    color: #fff;
+    border: 0;
+    outline: 0;
+    background: #000;
+    font-size: 16px;
+    cursor: wait;
+    padding: 30px;
+    position: absolute;
+    bottom: -200px;
+    right: -400px;
+}
+    </style>
+</head>
+<body>
+
+        <h1>第一阶段 HTML+CSS项目</h1>
+        <div class="stage">
+             <button id="btn">旋转</button>
+
+         <ul id="ul">
+
+
+           <li><a href="login/index.html" target="_blank">2、登录界面</a></li>
+           <li><a href="myjd/index.html" target="_blank">3、我的京东</a></li>
+           <li><a href="JDRember/index.html" target="_blank">4、京东会员</a></li>
+           <li><a href="myOrder/index.html" target="_blank">5、我的订单</a></li>
+           <li><a href="company_purchase/index.html" target="_blank">6、企业采购</a></li>
+           <li><a href="helpCenter/index.html" target="_blank">7、帮助中心</a></li>
+           <li>
+               <a href="shop_search/index.html" target="_blank">8、商品搜索</a>
+               <a href="shop_search/media.html" target="_blank" style="position:absolute;right: 0;top: 0;color:rgba(155,155,155,0.5)">i</a>
+           </li>
+           <li><a href="dragonfly/index.html" target="_blank">9、威龙远航</a></li>
+           <li><a href="superDay/index.html" target="_blank">10、惠普超级品牌日</a></li>
+             <li> <a href="jd/index.html" target="_blank">1、京东首页</a>
+                 <a href="jd/sum.html" target="_blank" style="position:absolute;right: 0;top: 0;color:rgba(155,155,155,0.5)">i</a>
+             </li>
+
+
+       </ul>
+   </div>
+       <p style="position: fixed;bottom: 40px;right: 40px;color: #fff;font-weight: bold;font-size: 18px;">制作：朱建勇</p>
+
+
+
+
+
+
+
+<script>
+    window.onload = function () {
+        // 1. 求出屏幕的尺寸
+        var screenW = document.documentElement.clientWidth;
+        var screenH = document.documentElement.clientHeight;
+
+        var arr = [];
+        for (var i = 0; i < 100; i++) {
+            // 创建星星节点
+            var span = document.createElement('span');
+            document.body.appendChild(span);
+            var ospan = document.getElementsByTagName("span");
+        }
+        for (var i = 0; i < ospan.length; i++) {
+            // 星星 随机的坐标
+            var x = parseInt(Math.random() * screenW);
+            var y = parseInt(Math.random() * screenH);
+            ospan[i].style.left = x + 'px';
+            ospan[i].style.top = y + 'px';
+            //添加到新数组
+            arr[i] = [x, y];
+            // 2.3 随机缩放
+            var scale = Math.random() * 1.2;
+            ospan[i].style.transform = 'scale(' + scale + ', ' + scale + ')';
+            // 2.4 频率
+            var rate = Math.random() * 1.5;
+            ospan[i].style.animationDelay = rate + 's';
+        }
+        var num = 0;
+        var arry = [];
+        var arrx = [];
+
+        setInterval(function () {
+            num++;
+            if(num>1600) {
+                num=0
+            }else{
+                for (var j = 0; j < arr.length; j++) {
+                    arrx[j] = arr[j][0] + num;
+                    arry[j] = arr[j][1] + num;
+                    if (arrx[j] > screenW) {
+                        ospan[j].style.left = arrx[j]-screenW+ 'px';
+                    } else {
+                        ospan[j].style.left = arrx[j] + 'px';
+                    }
+                    if (arry[j] > screenH) {
+                        ospan[j].style.top = arry[j]- screenH*1.20 + 'px';
+                    } else {
+                        ospan[j].style.top = arry[j] + 'px';
+                    }
+                }
+            }
+        }, 20);
+
+        var btn=document.getElementById("btn");
+        var ul=document.getElementById("ul");
+        btn.onmouseover=function () {
+            ul.style.animation="move 10s linear infinite ";
+
+
+        };
+        btn.onmouseout=function () {
+            console.log(1);
+            ul.style.animation="move 10s linear infinite";
+            ul.style.animationPlayState="paused";
+
+
+        }
+
+}
+</script>
+</body>
+</html>

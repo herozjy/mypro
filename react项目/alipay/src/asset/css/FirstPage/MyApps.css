@@ -1,0 +1,32 @@
+ul.MyApps{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 10px;
+    max-height: 172px;
+    overflow: hidden;
+
+
+}
+ul.MyApps li{
+    width: 25%;
+}
+
+ul.MyApps li a {
+    color: #555;
+    font-size: 12px;
+}
+ul.MyApps li:hover a{
+
+    /*background-color: #1890ff;*/
+    color: #1890ff;
+}
+
+ul.MyApps li a i{
+    font-size: 22px;
+}
+
+ul.MyApps li:hover a p{
+    color:#1890ff;
+
+}

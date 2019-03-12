@@ -1,0 +1,16 @@
+.FirstPageCarousel .ant-carousel .slick-slide {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+.FirstPageCarousel .ant-carousel img{
+    width: 100%;
+    height: 100px;
+}
+.FirstPageCarousel .ant-carousel .slick-dots li button{
+    background:#555
+}
+.FirstPageCarousel .ant-carousel .slick-dots li.slick-active button {
+    background: #1890ff;
+
+}

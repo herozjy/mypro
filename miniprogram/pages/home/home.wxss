@@ -1,0 +1,8 @@
+.slide-item{
+  width: 750rpx;
+  height: 400rpx;
+}
+.slide-item image{
+  width: 750rpx;
+  height: 400rpx;
+}

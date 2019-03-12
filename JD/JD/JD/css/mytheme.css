@@ -1,0 +1,14 @@
+
+#ul{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 33;
+}
+#ul li{
+	float: left;
+	margin-right: 6px;
+	width: 14px;
+	height: 14px;
+	background-image: url(../img/theme.gif);
+}

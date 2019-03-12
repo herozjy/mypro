@@ -1,0 +1,33 @@
+.ShopTop{
+    padding: 0.5rem 1.5rem;
+    background-color: #2ca8ff;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.address{
+    width: 25%;
+    float: left;
+}
+
+.address input {
+    border: none;
+    background-color: #2ca8ff;
+
+}
+.ShopTop_search{
+    width: 70%;
+    float: right;
+}
+.ShopTop_search  i.anticon-user-add,.ShopTop_search  i.anticon-plus{
+    font-size: 22px;
+    color: white;
+    margin-left: 10px;
+}
+.Shop_Carousel .ant-carousel .slick-dots li{
+    bottom :5px
+}
+.Shop_Carousel .ant-carousel .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}

@@ -1,0 +1,285 @@
+/*初始化*/
+
+html, body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-family: "宋体", "SimSun", "Arial Narrow";
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+/*select,input,select{vertical-align:middle;}*/
+img {
+    display: block;
+    /*vertical-align: top;*/
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    height: 100%;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    visibily: hidden;
+    clear: both;
+    display: block;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+/*初始化*/
+.box-1190 {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/*<!--头部开始-->*/
+#top {
+    height: 100px;
+    /*border: 1px solid #ccc;*/
+    box-shadow: 0 4px 5px #ccc;
+}
+
+#top .logo {
+    float: left;
+    padding-top: 15px;
+
+}
+
+#top .logo img {
+    float: left;
+}
+
+#top .logo span {
+    float: left;
+    font-size: 26px;
+    line-height: 80px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#top .back {
+    line-height: 130px;
+    float: right;
+}
+
+/*<!--头部结束-->*/
+
+/*内容开始*/
+#content {
+}
+
+.progress {
+    line-height: 24px;
+    text-align: center;
+    margin: 80px auto 0;
+    width: 375px;
+}
+
+.progress .progress-num-1 {
+    float: left;
+    width: 23px;
+    height: 23px;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #33bb44;
+    border: 1px solid #33bb44;
+    color: #fff;
+
+}
+
+.progress .progress-num-2 {
+    float: left;
+    width: 23px;
+    font-weight: bold;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #33bb44;
+
+    border: 1px solid #cfcfcf;
+    color: #cfcfcf;
+}
+
+.progress .progress-num-3 {
+    float: left;
+    width: 23px;
+    font-weight: bold;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+    color: #cfcfcf;
+}
+
+.progress .progress-dot-1 {
+    margin: 8px 12px;
+    float: left;
+    width: 124px;
+    height: 8px;
+    background: url("../img/reg-icon.png") no-repeat 0 -130px;
+
+}
+
+.progress .progress-dot-2 {
+    margin: 8px 12px;
+    float: left;
+    width: 124px;
+    height: 8px;
+    background: url("../img/reg-icon.png") no-repeat 0 -100px;
+}
+.progress-info-green {
+    color: #33bb44;
+}
+.progress-info {
+    width: 375px;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    color: #999;
+}
+
+
+
+.form {
+    width: 377px;
+
+    margin: 30px auto 0 ;
+}
+ .form{
+
+}
+ .form dl {
+
+}
+ .form dl dd{
+     height: 85px;
+ }
+ .form dl dd  input {
+    padding-left: 20px;
+    outline: none;
+     border: 1px solid #fff;
+    border-left: 1px solid #ccc;
+    width: 270px;
+    height: 45px;
+
+}
+.form dl dd  input:hover{
+    border-left: 1px solid #999;
+}
+
+.input-border {
+    height: 49px;
+    border: 1px solid #ccc;
+}
+.input-border:hover {
+
+    border: 1px solid #999;
+}
+.form dl dd label {
+
+    display: inline-block;
+    /*border:1px solid #999 ;*/
+    width: 75px;
+
+    text-align: center;
+    color: #999999;
+
+}
+.form-tip {
+    height: 20px;
+    margin-top:2px ;
+    color: #999;
+}
+.form-error{
+
+    height: 16px;
+    padding-left: 22px;
+    background: url("../img/error.gif") no-repeat left center;
+}
+.form-yes{
+
+    height: 16px;
+    padding-left: 22px;
+    background: url("../img/yes.gif") no-repeat left center;
+}
+
+
+
+.form .progress-next {
+    width: 375px;
+    height: 50px;
+    margin-top: 15px;
+    background: #e40015;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*内容结束*/
+
+/*底部开始*/
+#footer {
+    margin: 60px 0;
+
+}
+
+.links {
+    padding-top: 30px;
+    text-align: center;
+    color: #c9c9c9;
+    border-top: 1px solid #ccc;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links ul li a {
+    color: #c9c9c9;
+    padding: 5px;
+
+}
+
+.links ul li span {
+    color: #c9c9c9;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

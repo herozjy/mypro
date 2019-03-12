@@ -1,0 +1,32 @@
+.Service img{
+    width: 100%;
+
+}
+.Service{
+   margin-bottom: 20px;
+}
+.Service_main{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.Service_main dt{
+    padding-top: 5px;
+    float: left;
+    margin-right: 15px;
+}
+.Service_main dt i{
+    font-size: 30px;
+}
+.Service_main dd{
+    float: left;
+}
+.Service_main dd div:nth-child(1){
+    color: #000000;
+    font-weight: bold;
+}
+.Service_main dd div:nth-child(2){
+    color: #555;
+    font-size: 13px;
+}
