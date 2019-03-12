@@ -1,0 +1,38 @@
+.CustomMade{
+    padding: 0 1.5rem;
+}
+.CustomMade ul li{
+overflow: hidden;
+    margin-bottom: 10px;
+}
+.CustomMade_left{
+    width: 30%;
+    float: left;
+}
+.CustomMade_left img{
+    width: 100%;
+}
+.CustomMade_right{
+    width: 65%;
+float: right;
+}
+.CustomMade_right{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.CustomMade_right_l_title{
+font-weight: bold;
+}
+.CustomMade_right_l_shoper, .CustomMade_right_l_num, .CustomMade_right_r{
+    color: #a5a5a5;
+}
+
+.CustomMade_right_l_price span:nth-child(1){
+    color: #e11111;
+    font-weight: bold;
+    font-size: 16px;
+}
+.CustomMade_right_l_price span:nth-child(2){
+    text-decoration: line-through;
+}

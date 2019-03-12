@@ -1,0 +1,7 @@
+@charset "UTF-8" ;
+@import '~antd/dist/antd.css';
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

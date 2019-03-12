@@ -1,0 +1,117 @@
+<!-- <view>在github上获得api</view>
+<view>https://github.com/jokermonn/-Api</view> -->
+
+<view class="box">
+  <view class='blockquote'>
+    <view style="font-size: inherit;color: inherit;line-height: inherit;">
+        <view>我的个人简历</view>
+        <view>求职人：朱**</view>
+        <view>求职意向：web前端开发</view>
+    </view>
+  </view>
+  <view class="title">基本信息</view>
+  <view class='info color_gray'>
+    <view>
+       <text class="info_left">姓  名 : 朱建勇</text>
+       <text>学  校 : 龙岩学院</text>
+    </view>
+    <view>
+      <text class="info_left">电  话 : 158****8526</text>
+      <text>专  业 : 电子信息工程</text>
+    </view>
+    <view>
+      <text class="info_left">邮  箱 : 463***285@qq.com</text>
+      <text>学  历 : 本科</text>
+    </view>
+    <view>
+     <text class="info_left">籍  贯 : 福建省莆田市</text>
+     <text>生 日:1991.07.15</text>
+    </view>
+    <view></view>
+  
+  </view>
+  <view class="title">职业技能</view>
+    <view class='color_gray'>
+   
+      <view>1.熟练VSCode，WebStorm，Photoshop等网页制作工具</view>
+      <view>2.掌握HTML、CSS及JavaScript编程语言，能使用这些语言开发基础的页面效果等</view>
+      <view>3.熟悉HTML5、CSS3及其新增的Flex弹性盒子等，运用以达到更好的页面效果，并结合js来实现简易的H5游戏，如贪吃蛇、拼图等。</view>
+      <view>4.熟悉jQuery库，Bootstrap、React、Vue等前端框架的使用，能使用框架做简单的自适应，单页面网站</view>
+      <view>5.了解PHP及MySQL，会MySQL基本的增删改查，能够使用PHP制作简单的数据交互</view>
+      <view>6.了解Element-UI、Antd框架</view>
+      <view>7.对NodeJS、ES6、Angular前端框架、微信小程序、公众号开发有一定的了解</view>
+  
+  </view>
+  <view class="title">项目经验</view>
+  <view>
+    <view wx:for="{{exp}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx">
+      <view class="title_exp">{{itemName.title}}</view>
+      <view class="item_exp">
+        <view class='color_gray'>1.{{itemName.pro}}</view>
+        <view class='color_gray'>2.{{itemName.technique}}</view>
+        <view class='color_gray'>3.{{itemName.sum}}</view>
+      </view>
+    </view>
+    <view  class='color_gray'>
+      <view>项目地址：</view>
+      <navigator  url="https://gitee.com/zjyhero"  open-type="redirect"          hover-class="other-navigator-hover">码云 : https://gitee.com/zjyhero</navigator>
+       <navigator  url="https://github.com/herozjy/mypro"  open-type="redirect"          hover-class="other-navigator-hover">GitHub: https://github.com/herozjy/mypro</navigator>
+    </view>
+  
+  
+  </view>
+  <view class="title">教育背景</view>
+  <view class='color_gray'>
+    <view class='edu_info'>
+     <view>
+      <text>2010.09-2014.06</text>
+      <text>学 校：龙岩学院 </text>
+      </view>
+      <view>
+         <text>学历：本科</text>
+      <text> 专业：电子信息工程    </text>
+      </view>
+     
+    </view>
+    <view>
+      主修课程：C语言，电子设计自动化（EDA），单片机技术，可编程逻辑控制器（PLC）
+    </view>       
+
+
+  </view>
+  <view class="title">工作经历</view>
+  <view class='work color_gray'>
+    <view>
+      <view>
+        <view>2014.07-2016.03　　　　　职位：制程工程师 </view>
+        <view>公司：厦门宸鸿科技有限公司 </view>
+      </view>
+      <view class="item_exp">
+        <view>1.改善工艺流程，提高产品的产量及质量；</view>
+        <view>2.监控产品合格率，若合格率降低，寻找原因并提出解决方案；</view>
+        <view>3.撰写作业指导书，明确生产流程步骤，保证稳定生产。</view>
+      </view>
+    </view>
+
+    <view style='margin-top:20rpx'>
+      <view>
+        <view>2016.05-2018.03　　　　　职位：质验员 </view>
+        <view>公司：厦门市湖里星光金属制品有限公司</view>
+      </view>
+      <view class="item_exp">
+        <view>对即将出货的成品进行评估：</view>
+        <view>1.外观是否符合要求；</view>
+        <view>2.外形尺寸是否与生产用图提供的数值一致；</view>
+        <view>3.产品包装、放是否按照SOP进行等，若条件满足，即可与仓管交接，等待出货。</view>
+      </view>
+    </view>
+
+  </view>
+  <view class="title">自我评价</view>
+  <view class='item_exp color_gray'>
+    <view>1.本人性格沉稳，积极主动，对编程充满热情，对Web前端开发比较熟悉。</view>
+    <view>2.学习能力较强，主动性高，思维活跃,有较强的抗压能力和团队合作精神，乐于尝试学习新事物。</view>
+    <view>3.工作认真负责，工作中能吃苦肯专研，注重长期稳定的发展机会。</view>
+  </view>
+
+</view>

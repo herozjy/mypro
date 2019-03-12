@@ -1,0 +1,37 @@
+.ZhenXuan{
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.ZhenXuan li:nth-child(1){
+    width: 65%;
+}
+.ZhenXuan li:nth-child(2){
+    width: 32%;
+}
+.ZhenXuan  li img{
+    width: 100%;
+}
+.ZhenXuan  li{
+    font-size: 12px;
+}
+.ZhenXuan li .ShopRobs_title{
+    margin-top: 3px;
+    font-weight: bold;
+}
+.ZhenXuan  li .ShopRobs_info{
+
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.ZhenXuan  li  .ShopRobs_price{
+    font-weight: bold;
+}
+.ZhenXuan li  .ShopRobs_price span:nth-child(1){
+    color: #e11111;
+}
+.ZhenXuan  li  .ShopRobs_price span:nth-child(2){
+    text-decoration: line-through;
+}

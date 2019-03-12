@@ -1,0 +1,25 @@
+<view class='swiper'>
+    <swiper
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+    >
+    <block wx:for="{{imgUrls}}" wx:key="{{1}}">
+    <swiper-item class="slide-item">
+    <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+    </block>
+    </swiper>
+</view>
+
+
+<view>
+ <navigator
+    url="/pages/show/show"
+    hover-class="navigator-hover"
+  >
+    <button > 跳转到今日头条</button>
+  </navigator>
+
+</view>

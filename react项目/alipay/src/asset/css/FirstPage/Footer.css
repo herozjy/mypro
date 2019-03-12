@@ -1,0 +1,89 @@
+/*尾部导航开始*/
+html,body{
+  padding-bottom: 50px;
+    height: auto;
+}
+.footer{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+ul.anticons-list{
+    height: 100%;
+    padding-top:10px ;
+    background-color: #f9f9f9;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+}
+ul.anticons-list li{
+    float: left;
+    text-align: center;
+}
+ul.anticons-list li a {
+    color: #555;
+
+}
+ul.anticons-list li:hover a{
+
+    /*background-color: #1890ff;*/
+    color: #1890ff;
+}
+ul.anticons-list li a i{
+    font-size: 22px;
+}
+ul.anticons-list li a p{
+    margin-top:5px ;
+}
+ul.anticons-list li:hover a p{
+    color:#1890ff;
+
+}
+/*尾部导航结束*/
+
+
+
+/*头部导航开始*/
+.ant-input-affix-wrapper .ant-input-suffix {
+    right: 5%;
+}
+.ant-input-affix-wrapper{
+    width: 70%;
+    outline: none;
+}
+.ant-input{
+
+}
+.home_nav_part1{
+    padding: 10px 15px;
+}
+.home_nav_part1 .anticon-user-add,.home_nav_part1 .anticon-plus{
+    font-size: 22px;
+    color:#fff;
+    margin-left: 6%;
+    vertical-align: -0.25em;
+}
+.home_nav{
+    background-color: #1890ff;
+}
+.home_nav_part2{
+    /*padding: 0px 15px;*/
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.home_nav_part2 li{
+
+}
+.home_nav_part2 li a{
+ color: white;
+
+}
+.home_nav_part2 li a i{
+    margin: 3px 0;
+    font-size: 24px;
+}
+/*头部导航结束*/

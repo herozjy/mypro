@@ -1,0 +1,31 @@
+.Financing{
+    padding: 0 22px ;
+    margin-bottom: 15px;
+}
+.Financing_box{
+    box-shadow: 0 0 10px #ccc;
+    padding-bottom: 10px;
+}
+.Financing_big img{
+    width: 100%;
+}
+.Financing_small{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
+}
+.Financing_small ul li  img{
+    width: 40%;
+}
+.Financing_small ul li:nth-child(2){
+    color: #000c17;
+    font-size: 16px;
+    font-weight: bold;
+}
+.Financing_small ul li:nth-child(3){
+    color: #878787;
+    font-size: 13px;
+
+}

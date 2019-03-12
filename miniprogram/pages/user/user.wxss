@@ -1,0 +1,60 @@
+/* pages/user/user.wxss */
+.box{
+  padding: 20rpx;
+   font-size: 14px;
+    line-height: 1.2rem;
+}
+.blockquote{
+  
+    line-height: inherit;
+    padding:20rpx 30rpx;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(129, 145, 152);
+    border-left-width: 12rpx;
+    border-left-color: rgb(220, 230, 240);
+    background: rgb(242, 247, 251);
+    overflow: auto;
+    word-wrap: normal;
+    word-break: normal;
+    padding-left: 20rpx;
+    border-left: 6rpx solid #dbdbdb;
+}
+.title{
+    line-height: inherit;
+    margin-top: 1.5em;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+    margin-right: 5px;
+    padding: 8px 15px;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right bottom, rgb(0, 188, 212), rgb(63, 81, 181));
+    background-color: rgb(63, 81, 181);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-shadow: rgb(102, 102, 102) 1px 1px 1px;
+    box-shadow: rgb(102, 102, 102) 1px 1px 2px;
+}
+.color_gray{
+      color: rgb(84, 87, 88);
+}
+.info_left {
+  width: 60%;
+  display: inline-block
+}
+
+.title_exp{
+   color: rgb(46, 48, 49);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2.5rem;
+
+}
+.item_exp{
+  padding: 20rpx;
+}
+.edu_info text{
+  width: 50%;
+  display: inline-block
+}

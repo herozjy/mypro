@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        #box{
+            border: 1px solid #ccc;
+            /*overflow: hidden;*/
+        }
+      #box_left{
+            width: 400px;
+            float: left;
+
+        }
+       #box_right{
+
+            width: 600px;
+            float: right;
+            border-left: 1px solid #ccc;
+        }
+
+        .clearfix:after{
+            content:"";
+            clear:both;
+            display:block;
+        }
+
+        .clearfix{
+            zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 1100px;margin: 0 auto">
+            <div class="clearfix" style="width: 1100px;" id="box">
+                <div id="box_left">asdasdasd</div>
+                <div id="box_right">
+                    <div style="width: 600px;height: 300px;background-color: #e13111;float: left"></div>
+                    <div style="width: 600px;height: 300px;background-color: #e13111;float: left"></div>
+                    <div style="width: 600px;height: 300px;background-color: #e13111;float: left"></div>
+                    <div style="width: 600px;height: 300px;background-color: #e13111;float: left"></div>
+                    <div style="width: 600px;height: 300px;background-color: #e13111;float: left"></div>
+
+                </div>
+            </div>
+
+
+    </div>
+</body>
+</html>

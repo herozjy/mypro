@@ -1,0 +1,15 @@
+.ShopApp{
+    padding: 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.ShopApp li{
+    width: 20%;
+    margin-bottom: 10px;
+}
+.ShopApp li i{
+    font-size: 20px;
+    margin-bottom: 6px;
+}

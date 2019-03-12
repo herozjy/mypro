@@ -1,0 +1,46 @@
+
+@import "wxParse/wxParse.wxss";
+
+.content{
+
+  background: #F7F7F7;
+}
+
+.h2 {
+
+  text-align: center;
+  height:60rpx;
+  line-height: 60rpx;
+
+
+}
+.list{
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.list .item{
+
+  width: 33.3%;
+  height: 240rpx;
+
+  padding:10rpx;
+  box-sizing: border-box;
+
+  
+}
+
+.list .item text{
+
+  font-size: 32rpx;
+
+  color:#666;
+}
+
+
+.list .item image{
+  width: 90%;
+  height: 160rpx;
+  margin: 0 auto;
+}
