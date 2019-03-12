@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/html5shiv.min.js"></script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background-color: #000;">
+
+<!--导航-->
+<nav class="navbar" id="nav">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" class="">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#">首页</a></li>
+                <li class="dropdown dropdown_li1">
+                    <a href="#">核心业务 <span class="caret"></span>
+                    </a>
+                    <ul class="list-unstyled  list_ul">
+                        <li><a href="javascript:;" title="智能安防">智能安防</a></li>
+                        <li><a href="javascript:;" title="依图医疗">依图医疗</a></li>
+                        <li><a href="javascript:;" title="智慧金融">智慧金融</a></li>
+                        <li><a href="javascript:;" title="智慧城市">智慧城市</a></li>
+                        <li><a href="javascript:;" title="智能硬件">智能硬件</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">媒体报道</a></li>
+                <li><a href="#">客户案例</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li class="dropdown dropdown_li2 hidden-sm">
+                    <a href="#">加入依图 <span class="caret"></span></a>
+                    <ul class="list-unstyled list_ul">
+                        <li><a href="javascript:;" title="智能安防">校园招聘</a></li>
+                        <li><a href="javascript:;" title="依图医疗">社会招聘</a></li>
+
+                    </ul>
+                </li>
+                <li class="hidden-xs hidden-sm"><a href="#">English</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+</nav>
+<div id="progress"></div>
+
+
+<!--banner-->
+<div id="banner">
+    <div class="bg_banner" style="position: relative">
+        <ul class="banner_ul" id="banner_ul">
+            <li style="display: block">
+                <div class="container" style="position: relative">
+                    <div class="row" style="height: 100%">
+                        <h2 class="b1" style="font-weight: bold">Explore The AI World</h2>
+                        <div class="b2">
+                      <span class="b">智能的边界正在不断被突破<br>
+依图科技将前沿的人工智能技术与行业应用相结合<br>
+全面解决机器看、听、理解的根本问题<br>
+让人工智能服务于人类生命健康、公共安全、城市可持续发展等领域</span>
+                        </div>
+                        <div class="b3"></div>
+                        <a href="" class="b4"> <img src="img/bannerSmall_btn.png" alt=""></a>
+                        <div class="b5 ">
+                            <img src="img/bannerBig_1.png" alt="">
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container" style="position: relative">
+                    <div class="row" style="height: 100%">
+                        <h2 class="b1 col-xs-6" style="font-weight: bold">
+
+                            <img src="img/bannerSmall_1.png" alt="" class="img-responsive">
+                        </h2>
+                        <div class="b2">
+                     <span class="b">依图科技以自主研发的人工智能技术<br>
+力图构建全球一流的智能安防平台<br>
+为提升全球城市安全防护<br>
+提供全面的技术支持和完善的解决方案
+</span>
+                        </div>
+                        <div class="b3" style="width: 0;height: 0"></div>
+                        <a href="" class="b4"> <img src="img/bannerSmall_btn.png" alt=""></a>
+                        <div class="b5 ">
+                            <img src="img/bannerBig_4.png" alt="">
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="container" style="position: relative">
+                    <div class="row" style="height: 100%">
+                        <h2 class="b1" style="font-weight: bold">看见，健康的明天</h2>
+                        <div class="b2">
+                     <span class="b">个体的健康，是人类整体发展的基础<br>
+依图科技正在利用前沿的深度学习技术<br>
+让人工智能技术帮助和实现医疗领域的突破<br>
+努力让每个人都能获得医疗健康服务</span>
+                        </div>
+                        <div class="b3" style="width:0;height:0;"></div>
+                        <a href="" class="b4"> <img src="img/bannerSmall_btn.png" alt=""></a>
+                        <div class="b5 ">
+                            <img src="img/bannerBig_3.png" alt="">
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container" style="position: relative">
+                    <div class="row" style="height: 100%">
+                        <h2 class="b1" style="font-weight: bold">感知，可持续发展的城市</h2>
+                        <div class="b2">
+                     <span class="b">众多城市管理者面对城市车辆的爆发式增长都措手不及<br>
+如何在资源有限的情况下解决城市交通<br>
+更是一个世界级难题<br>
+依图科技将人工智能技术服务于城市顶层设计<br>
+为人们构建一个幸福社会
+</span>
+                        </div>
+                        <div class="b3" style="height: 0;width: 0"></div>
+                        <a href="" class="b4"> <img src="img/bannerSmall_btn.png" alt=""></a>
+                        <div class="b5 ">
+                            <img src="img/bannerBig_2.png" alt="">
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container" style="position: relative">
+                    <div class="row" style="height: 100%">
+                        <h2 class="b1" style="font-weight: bold">因为看得见,所以相信</h2>
+                        <div class="b2">
+               <span class="f">探索的动机，让我们永不止步。<br>
+AI的边界，正被步步扩宽。<br>
+面对无限可能，你是想仗剑江湖，还是悬壶济世？</span>
+                        </div>
+                        <div class="b3" style="height: 0;width: 0"></div>
+                        <a href="" class="b4"> <img src="img/bannerSmall_btn.png" alt=""></a>
+                        <div class="b5 ">
+                            <img src="img/bannerBig_6.png" alt="">
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="container">
+        <ol id="banner_ol" class="list-unstyled">
+
+                <li class="oc"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+        </ol>
+        </div>
+    </div>
+
+
+</div>
+
+<!--核心业务领域开始-->
+
+<div id="product">
+    <div class="container ">
+        <div class="hr"></div>
+        <div class="product_title text-center">
+            <em>
+                <i>
+                    <img src="img/t1.png" alt="">
+                </i>
+            </em>
+        </div>
+        <div class="row clearfix" style="margin-top: 30px;margin-bottom: 20px">
+            <div class="col-md-2 col-xs-6 product_k">
+                <div>
+                    <a href="">
+                        <h5 style="padding: 120px 0 35px 0;background:url(img/1.png) no-repeat center center;background-size: contain;">
+                            <span style="position: relative;left: 50%;margin-left: -30px;top: -15px;">智能安防</span></h5>
+                    </a>
+                    <h6 style="line-height: 18px;color: #999">
+                        依图科技以一流的计算机视觉构建一流的智能安防平台，精准的人脸以及车辆识别技术，为公安、金融等行业用户提供全面的技术支持和完善的解决方案，共同提升城市安全防护。
+                    </h6>
+                    <a type="button" class="btn btn-warning btn-block">查看详情</a>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6 product_k">
+                <div>
+                    <a href="">
+                        <h5 style="padding: 120px 0 35px 0;background:url(img/1.png) no-repeat center center;background-size: contain;">
+                            <span style="position: relative;left: 50%;margin-left: -30px;top: -15px;">智能安防</span></h5>
+                    </a>
+                    <h6 style="line-height: 18px;color: #999">
+                        依图科技以一流的计算机视觉构建一流的智能安防平台，精准的人脸以及车辆识别技术，为公安、金融等行业用户提供全面的技术支持和完善的解决方案，共同提升城市安全防护。
+                    </h6>
+                    <a type="button" class="btn btn-warning btn-block">查看详情</a>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6 product_k">
+                <div>
+                    <a href="">
+                        <h5 style="padding: 120px 0 35px 0;background:url(img/1.png) no-repeat center center;background-size: contain;">
+                            <span style="position: relative;left: 50%;margin-left: -30px;top: -15px;">智能安防</span></h5>
+                    </a>
+                    <h6 style="line-height: 18px;color: #999">
+                        依图科技以一流的计算机视觉构建一流的智能安防平台，精准的人脸以及车辆识别技术，为公安、金融等行业用户提供全面的技术支持和完善的解决方案，共同提升城市安全防护。
+                    </h6>
+                    <a type="button" class="btn btn-warning btn-block">查看详情</a>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6 product_k">
+                <div>
+                    <a href="">
+                        <h5 style="padding: 120px 0 35px 0;background:url(img/1.png) no-repeat center center;background-size: contain;">
+                            <span style="position: relative;left: 50%;margin-left: -30px;top: -15px;">智能安防</span></h5>
+                    </a>
+                    <h6 style="line-height: 18px;color: #999">
+                        依图科技以一流的计算机视觉构建一流的智能安防平台，精准的人脸以及车辆识别技术，为公安、金融等行业用户提供全面的技术支持和完善的解决方案，共同提升城市安全防护。
+                    </h6>
+                    <a type="button" class="btn btn-warning btn-block">查看详情</a>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6 product_k">
+                <div>
+                    <a href="">
+                        <h5 style="padding: 120px 0 35px 0;background:url(img/1.png) no-repeat center center;background-size: contain;">
+                            <span style="position: relative;left: 50%;margin-left: -30px;top: -15px;">智能安防</span></h5>
+                    </a>
+                    <h6 style="line-height: 18px;color: #999">
+                        依图科技以一流的计算机视觉构建一流的智能安防平台，精准的人脸以及车辆识别技术，为公安、金融等行业用户提供全面的技术支持和完善的解决方案，共同提升城市安全防护。
+                    </h6>
+                    <a type="button" class="btn btn-warning btn-block">查看详情</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+<!--核心业务领域结束-->
+
+
+<div id="par">
+    <div class="container ">
+        <div class="hr"></div>
+        <div class="product_title text-center">
+            <em>
+                <i>
+                    <img src="img/t2.png" alt="">
+                </i>
+            </em>
+        </div>
+
+
+        <ul id="myTabs" class="nav nav-tabs nav-justified" role="tablist">
+            <li role="presentation" class="active "><a href="#p1" role="tab" data-toggle="tab" aria-controls="home"
+                                                       aria-expanded="true">智能安防 </a></li>
+            <li role="presentation" class=""><a href="#p2" role="tab" data-toggle="tab" aria-controls="profile">
+                智慧医疗</a></li>
+            <li role="presentation" class=""><a href="#p3" role="tab" data-toggle="tab" aria-controls="profile">
+                智慧金融</a></li>
+            <li role="presentation" class=""><a href="#p4" role="tab" data-toggle="tab" aria-controls="profile">
+                生态合作伙伴</a></li>
+
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="p1" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="p2" aria-labelledby="profile-tab">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="p3">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="p4">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="img/par1.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!--关于我们-->
+<div id="about_us">
+    <div class="container ">
+        <div class="hr"></div>
+        <div class="product_title text-center">
+            <em>
+                <i>
+                    <img src="img/t4.png" alt="">
+                </i>
+            </em>
+        </div>
+
+
+        <ul id="myTabs_us" class="nav nav-tabs  nav-justified" role="tablist">
+            <li role="presentation" class="active"><a href="#a1" data-toggle="tab" aria-expanded="true">我们的团队</a></li>
+            <li role="presentation" class=""><a href="#a2" role="tab" data-toggle="tab" aria-expanded="false">媒体报道</a>
+            </li>
+            <li role="presentation" class=""><a href="#a3" role="tab" data-toggle="tab" aria-expanded="false">加入我们</a>
+            </li>
+        </ul>
+        <div id="myTabContent_us" class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="a1" aria-labelledby="home-tab">
+                <div class="panel_1">
+                    <div style="margin-top: -60px">
+                        <h4 style="margin-bottom: 20px">了解依图</h4>
+
+                        <p>依图科技从事人工智能创新性研究，致力于将先进的人工智能技术与行业应用相结合，建设更加安全、健康、便利的世界。</p>
+                        <p>
+                            依图带着国际视野组建世界一流的研发团队。我们不是为了把大公司或实验室的技术拿来快速套利，我们参与人工智能领域的基础性科学研究，致力于全面解决机器看、听、理解的根本问题，相信能在计算机视觉、自然语言理解、知识推理、智能硬件、机器人等技术领域作出突破性贡献。</p>
+                        <p>依图的技术已经服务于安防、金融、交通、医疗等多个行业。</p>
+                        <p>我们好奇智慧的奥秘，拓展智能的边界，期待与你一起构建智能的未来。</p>
+                        <p style="margin-top: 20px">
+                            <img src="img/bannerSmall_btn.png" alt="" style="float: right">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade clearfix" id="a2" aria-labelledby="profile-tab">
+                <div class="row " id="us_tab">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href=""> <img src="img/us_1.jpeg" class="hidden-xs" alt="...">
+                                <div class="caption">
+                                    <h4>依图融资：欢迎新伙伴加入AI之旅</h4>
+                                    <p>依图近期完成2亿美元C＋轮融资，欢迎新的投资人高成资本、工银国际、浦银国际的加入。感谢新的伙伴带来丰富的产业经验和一流的商业洞见，也感谢工商...</p>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href=""> <img src="img/us_2.jpg" class="hidden-xs" alt="...">
+                                <div class="caption">
+                                    <h4>依图融资：欢迎新伙伴加入AI之旅</h4>
+                                    <p>依图近期完成2亿美元C＋轮融资，欢迎新的投资人高成资本、工银国际、浦银国际的加入。感谢新的伙伴带来丰富的产业经验和一流的商业洞见，也感谢工商...</p>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href=""> <img src="img/us_1.jpeg" class="hidden-xs" alt="...">
+                                <div class="caption">
+                                    <h4>依图融资：欢迎新伙伴加入AI之旅</h4>
+                                    <p>依图近期完成2亿美元C＋轮融资，欢迎新的投资人高成资本、工银国际、浦银国际的加入。感谢新的伙伴带来丰富的产业经验和一流的商业洞见，也感谢工商...</p>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <a href=""> <img src="img/us_2.jpg" class="hidden-xs" alt="...">
+                                <div class="caption">
+                                    <h4>依图融资：欢迎新伙伴加入AI之旅</h4>
+                                    <p>依图近期完成2亿美元C＋轮融资，欢迎新的投资人高成资本、工银国际、浦银国际的加入。感谢新的伙伴带来丰富的产业经验和一流的商业洞见，也感谢工商...</p>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="a3" aria-labelledby="profile-tab">
+                <div class="row">
+                    <div class="col-md-5 text-center col-md-offset-1  mycolor ">
+                        <h4>社会招聘</h4>
+                        <div class="recommed">
+                            <span>研发</span> |
+                            <span>产品与设计</span> |
+                            <span>业务</span> |
+                            <span>职能支持</span>
+                        </div>
+                    </div>
+                    <div class="col-md-5 text-center mycolor col-md-offset-1 ">
+                        <h4>校园招聘</h4>
+                        <div class="recommed">
+                            <span>研发</span> |
+                            <span>产品与设计</span> |
+                            <span>业务</span> |
+                            <span>职能支持</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<!--底部-->
+<div id="footer">
+    <div class="container " style="padding-top: 50px">
+        <div class="myfooter">
+
+
+            <div class="row">
+                <div class="col-md-1 col-sm-6 col-xs-6">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="#">我们的团队</a></dd>
+                        <dd><a href="#">媒体报道</a></dd>
+                        <dd><a href="#">加入我们</a></dd>
+                    </dl>
+                </div>
+                <div class="col-md-1 col-sm-6 col-xs-6">
+                    <dl>
+                        <dt>客户案例</dt>
+                        <dd><a href="#">智能安防</a></dd>
+                        <dd><a href="#">金融</a></dd>
+                        <dd><a href="#">民生</a></dd>
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl>
+                        <dt>联系我们</dt>
+                        <dd>上海：上海市长宁区娄山关路523号金虹桥国际中心1座23F</dd>
+                        <dd>总机：021 - 52559588</dd>
+                        <dd>北京：北京市海淀区科学院南路2号融科资讯中心C座北楼501-505</dd>
+                        <dd>总机：010 - 83433999</dd>
+                        <dd>杭州：杭州市西湖区古墩路87号浙商财富中心3号楼10F</dd>
+                        <dd>总机：0571 - 8731 7518</dd>
+                    </dl>
+                </div>
+                <div class="col-md-3">
+                    <dl>
+                        <dt>商务合作</dt>
+                        <dd>商务合作：marketing@yitu-inc.com
+                            010 - 5624 9590
+                        </dd>
+                        <dd>媒体采访：media@yitu-inc.com
+                        </dd>
+                        <dd>投递简历：hr@yitu-inc.com</dd>
+                    </dl>
+                </div>
+                <div class="col-md-2"></div>
+
+            </div>
+
+
+        </div>
+
+
+        <p style="margin: 50px auto;color: #ccc">版权所有 © 上海依图网络科技有限公司 2012-2018 沪ICP备14000593号-2</p>
+
+    </div>
+
+</div>
+
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="js/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>

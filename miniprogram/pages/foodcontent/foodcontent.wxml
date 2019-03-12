@@ -1,0 +1,13 @@
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class='p_img'>
+  <image src='{{host}}{{list.img_url}}'></image>
+</view>
+
+<view class='h_2'>
+{{list.title}}
+</view>
+
+<view class='content'>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>

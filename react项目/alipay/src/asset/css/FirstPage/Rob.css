@@ -1,0 +1,61 @@
+.robs{
+    padding: 0 15px;
+}
+.robs_title{
+    margin-bottom: 10px;
+}
+.robs_title span:nth-child(1){
+    color: black;
+    font-weight: bold;
+}
+.robs_title span:nth-child(2){
+    color: #555;
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.robs_ul{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #ccc;
+}
+.robs_ul li{
+    margin : 10px 0;
+    width: 30%;
+    text-align: center;
+}
+.robs_ul li  .robs_shop_title{
+    color: black;
+    font-weight: bold;
+}
+.robs_ul li  .robs_shop_price{
+    color: #555;
+   font-size: 12px;
+}
+.robs_ul li  .robs_shop_price span:nth-child(2){
+    color: #e11111;
+
+}
+.robs_ul li img{
+    width: 80%;
+}
+
+.robs_footer{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 8px 10px 0;
+    overflow: hidden;
+}
+.robs_footer span:nth-child(1){
+ float: left;
+}
+.robs_footer span:nth-child(2){
+    float: right;
+}
+.robs_footer span{
+    color: #555;
+    font-size: 12px;
+}

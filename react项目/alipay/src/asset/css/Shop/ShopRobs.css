@@ -1,0 +1,39 @@
+.ShopRobs{
+    padding: 0 1.5rem;
+}
+.ShopRobs ul{
+    display: flex;
+    justify-content: space-between;
+}
+.ShopRobs ul li{
+    width: 32%;
+
+}
+.ShopRobs ul li img{
+    width: 100%;
+}
+.ShopRobs ul li{
+
+    font-size: 12px;
+
+
+}
+.ShopRobs ul li .ShopRobs_title{
+    margin-top: 3px;
+    font-weight: bold;
+}
+.ShopRobs ul li .ShopRobs_info{
+
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.ShopRobs ul li  .ShopRobs_price{
+font-weight: bold;
+}
+.ShopRobs ul li  .ShopRobs_price span:nth-child(1){
+    color: #e11111;
+}
+.ShopRobs ul li  .ShopRobs_price span:nth-child(2){
+    text-decoration: line-through;
+}

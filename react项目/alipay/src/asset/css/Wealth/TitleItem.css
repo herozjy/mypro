@@ -1,0 +1,17 @@
+.TitleItem{
+    padding: 0 25px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.TitleItem span{
+    font-size: 16px;
+}
+.TitleItem span:nth-child(1){
+    color: #000c17;
+    font-weight: bold;
+    float: left;
+}
+.TitleItem span:nth-child(2){
+    float: right;
+    color: #555555;
+}

@@ -1,0 +1,38 @@
+<view class='box'>
+
+
+ 
+
+    <view wx:for="{{newsData}}" wx:key="{{index}}" class='newsData_list'>
+         <navigator 
+         url="/page/navigate/navigate?title=navigate" 
+         >
+        <view>第{{index}}条新闻</view>
+        <view class='content_text'> {{item.content.abstract}}</view>
+
+    
+            <view  class='images_list'>
+                <image wx:for="{{item.content.image_list}}" wx:for-item="ite"  wx:key="{{index}}"  src='{{ite.url}}' data-img="{{ite.url_list}}" bindtap="previewimg"></image>
+            </view>
+
+            <view class='tip_text'>
+              <text>关键字:{{item.content.keywords}} </text>
+              </view>
+              <view  class='tip_text'><text>来源:{{item.content.source}}</text></view>
+              </navigator>
+    </view>
+
+</view>
+
+   
+
+
+
+
+
+
+
+
+
+
+

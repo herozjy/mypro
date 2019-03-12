@@ -1,0 +1,43 @@
+.FriendsContent{
+    padding: 0.5rem 1rem;
+}
+.FriendsContent li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.FriendsContent li .FriendsContent_left{
+width: 20%;
+}
+.FriendsContent li .FriendsContent_left img{
+    width: 100%;
+}
+.FriendsContent li .FriendsContent_right{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.FriendsContent_right_l{
+    width: 70%;
+
+}
+.FriendsContent_right_l div:nth-child(1){
+    color: #000c17;
+}
+.FriendsContent_right_l div:nth-child(2){
+    color: #555555;
+    font-size: 12px;
+    text-overflow :  ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 22px;
+    /*display: table-cell;*/
+    /*height: 40px;*/
+    /*vertical-align: bottom;*/
+
+}
+.FriendsContent_right_r{
+    width: 25%;
+    text-align: right;
+}

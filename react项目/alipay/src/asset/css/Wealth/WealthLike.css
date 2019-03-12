@@ -1,0 +1,29 @@
+.WealthLike{
+    padding: 0 22px;
+}
+
+.WealthLike dl{
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.WealthLike dl dt{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+.WealthLike dl dt img{
+    width: 100%;
+}
+.WealthLike dl dd{
+    width: 62%;
+    float: left;
+}
+.WealthLike dl dd div:nth-child(1){
+    color: #000c17;
+}
+.WealthLike dl dd div:nth-child(2){
+    color: #878787;
+    font-size: 12px;
+    margin-top: 10px;
+}

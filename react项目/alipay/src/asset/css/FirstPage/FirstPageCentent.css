@@ -1,0 +1,48 @@
+.FirstPageCentent {
+    padding: 0px 15px 10px;
+}
+.FirstPageCentent_main{
+
+
+
+}
+.FirstPageCentent_main_title{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.FirstPageContent_ul{
+
+    box-shadow: #ccc 0px 0px 10px;
+    display: flex;justify-content: space-around;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.FirstPageContent_ul li{
+    float: left;
+
+}
+.FirstPageCentent_left_1{
+    margin-top: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.FirstPageCentent_left_2{
+    color: #7f7f7f;
+    font-size: 12px;
+}
+.FirstPageCentent_left_1{
+
+}
+.FirstPageContent_ul li img{
+    width: 60px;
+}
+
+.FirstPageCentent_left{
+
+    float: left;
+
+}
+.FirstPageCentent_right{
+    float: left;
+    margin-left: 10px;
+}
