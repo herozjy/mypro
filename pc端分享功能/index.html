@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分享</title>
+    <style type="text/css">
+        .share-area { padding: 30px 0 40px 90px; }
+        .share-area .label { float: left; line-height: 54px; }
+        .share-area ul { overflow: hidden; display: inline-block; }
+        .share-area ul li { float: left; margin-right: 10px; }
+        .share-area ul li a{ display: inline-block; width: 50px; height: 50px; }
+        .share-tx-weChat { background: url(../img/share_btns/icon_weixin_normal.png) no-repeat center; width: 50px; height: 50px; border: 1px solid red; }
+        .share-tx-weChat:hover { background: url(../img/share_btns/icon_weixin_pressed.png) no-repeat center; width: 50px; height: 50px; border: 1px solid red; }
+        .share-qq { background: url(../img/share_btns/icon_QQ__normal.png) no-repeat center; width: 50px; height: 50px; border: 1px solid red; }
+        .share-qq:hover { background: url(../img/share_btns/icon_QQ_pressed.png) no-repeat center; width: 50px; height: 50px; border: 1px solid red; }
+        .share-qzone { background: url(../img/share_btns/icon_QQkongjian_normal.png) no-repeat center; width: 50px; height: 50px; border: 1px solid red; }
+        .share-qzone:hover { background: url(../img/share_btns/icon_QQkongjian_press.png) no-repeat center; width: 50px; height: 50px; border: 1px solid red; }
+        .share-xl-weiBo { background: url(../img/share_btns/icon_weibo_normal.png) no-repeat center; width: 50px; height: 50px; border: 1px solid red; }
+        .share-xl-weiBo:hover { background: url(../img/share_btns/icon_weibo_press.png) no-repeat center; width: 50px; height: 50px; border: 1px solid red; }
+        .share-link-url { background: url(../img/share_btns/icon_fuzhilianjie_normal.png) no-repeat center; width: 50px; height: 50px; border: 1px solid red; }
+        .share-link-url:hover { background: url(../img/share_btns/icon_fuzhilianjie_press.png) no-repeat center; width: 50px; height: 50px; border: 1px solid red; }
+    </style>
+</head>
+<body>
+    <div class="share-area">
+        <div class="label">分享到：</div>
+        <ul>
+            <li class="share-code"><a class="share-tx-weChat"></a>
+                <div id="layerWxcode" class="towdimcodelayer js-transition">
+                    <div id="shareUrl"></div>
+                    <div>打开微信扫一扫</div>
+                 </div>
+            </li>
+            <li title="分享到QQ"><a class="share-qq"></a></li>
+            <li title="分享到QQ空间"><a class="share-qzone"></a></li>
+            <li title="分享到新浪微博"><a class="share-xl-weiBo"></a></li>
+            <li title="复制链接"><a class="share-link-url"></a></li>
+        </ul>
+        <textarea id="requestLink" style="position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;">这是幕后黑手</textarea>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/qrcode.min.js"></script>
+    <script type="text/javascript">
+        (function($, window, document, undefined) {
+            //插件初始化
+            function init(target, options) {
+                var settings = $.extend({}, $.fn.socialShare.defaults, options);
+                //初始化各个组件
+                var $msb_main = "<a class='msb_main'><img title='分享' src='images/share_core_square.jpg'></a>";
+                var $social_group = "<div class='social_group'>"
+                + "<a target='_blank' class='msb_network_button weixin'>weixin</a>"
+                + "<a target='_blank' class='msb_network_button sina'>sina</a>"
+                + "<a target='_blank' class='msb_network_button tQQ'>tQQ</a>"
+                + "<a target='_blank' class='msb_network_button qZone'>qZone</a>"
+                + "<a target='_blank' class='msb_network_button douban'>douban</a>"
+                + "</div>";
+                $(target).append($msb_main);
+                $(target).append($social_group);
+                $(target).addClass("socialShare");
+
+
+                //添加腾讯微博分享事件
+                $(document).on("click",".msb_network_button.tQQ",function(){
+                    tQQ(this,settings);
+                });
+                //添加QQ空间分享事件
+                $(document).on("click",".msb_network_button.qZone",function(){
+                    qZone(this,settings);
+                });
+                //添加新浪微博分享事件
+                $(document).on("click",".msb_network_button.sina",function(){
+                    sinaWeibo(this,settings);
+                });
+                //添加豆瓣分享事件
+                $(document).on("click",".msb_network_button.douban",function(){
+                    doubanShare(this,settings);
+                });
+                //添加微信分享事件
+                $(document).on("click",".msb_network_button.weixin",function(){
+                    weixinShare(this,settings);
+                });
+                $(document).on("click",".msb_main",function(){
+                    if ($(this).hasClass("disabled")) return;
+                    var e = 500;//动画时间
+                    var t = 250;//延迟时间
+                    var r = $(this).parent().find(".msb_network_button").length;  //分享组件的个数
+                    var i = 60;
+                    var s = e + (r - 1) * t;
+                    var o = 1;
+                    var a = $(this).outerWidth();
+                    var f = $(this).outerHeight();
+                    var c = $(this).parent().find(".msb_network_button:eq(0)").outerWidth();
+                    var h = $(this).parent().find(".msb_network_button:eq(0)").outerHeight();
+                    var p = (a - c) / 2; //起始位置
+                    var d = (f - h) / 2; //起始位置
+                    var v = 0 / 180 * Math.PI;
+                    if (!$(this).hasClass("active")) {
+                        $(this).addClass("disabled").delay(s).queue(function(e) {
+                            $(this).removeClass("disabled").addClass("active");
+                            e()
+                        });
+                        $(this).parent().find(".msb_network_button").each(function() {
+                            var n = p + (p + i * o) * Math.cos(v);  //结束位置
+                            var r = d + (d + i * o) * Math.sin(v);  //结束位置
+                            $(this).css({
+                                display: "block",
+                                left: p + "px",
+                                top: d + "px"
+                            }).stop().delay(t * o).animate({
+                                left: n + "px",
+                                top: r + "px"
+                            }, e);
+                            o++
+                        })
+                    } else {
+                        o = r;
+                        $(this).addClass("disabled").delay(s).queue(function(e) {
+                            $(this).removeClass("disabled").removeClass("active");
+                            e()
+                        });
+                        $(this).parent().find(".msb_network_button").each(function() {
+                            $(this).stop().delay(t * o).animate({
+                                left: p,
+                                top: d
+                            }, e);
+                            o--
+                        })
+                    }
+                });
+            }
+
+            function replaceAPI (api,options) {
+                api = api.replace('{url}', options.url);
+                api = api.replace('{title}', options.title);
+                api = api.replace('{content}', options.content);
+                api = api.replace('{pic}', options.pic);
+
+                return api;
+            }
+
+            function tQQ(target,options){
+                var options = $.extend({}, $.fn.socialShare.defaults, options);
+
+                window.open(replaceAPI(tqq,options));
+            }
+
+            function qZone(target,options){
+                var options = $.extend({}, $.fn.socialShare.defaults, options);
+
+                window.open(replaceAPI(qzone,options));
+            }
+
+            function sinaWeibo(target,options){
+                var options = $.extend({}, $.fn.socialShare.defaults, options);
+
+                window.open(replaceAPI(sina,options));
+            }
+
+            function doubanShare(target,options){
+                window.open(replaceAPI(douban,$.extend({},$.fn.socialShare.defaults,options)));
+            }
+
+            function weixinShare(target,options){
+                window.open(replaceAPI(weixin,$.extend({},$.fn.socialShare.defaults,options)));
+            }
+
+            $.fn.socialShare = function(options, param) {
+                if(typeof options == 'string'){
+                    var method = $.fn.socialShare.methods[options];
+                    if(method)
+                        return method(this,param);
+                }else
+                    init(this,options);
+            }
+
+
+            //插件默认参数
+            $.fn.socialShare.defaults = {
+                url: window.location.href,
+                title: document.title,
+                content: '',
+                pic: ''
+            }
+
+            //插件方法
+            $.fn.socialShare.methods = {
+                //初始化方法
+                init:function(jq,options){
+                    return jq.each(function(){
+                        init(this,options);
+                    });
+                },
+                tQQ:function(jq,options){
+                    return jq.each(function(){
+                        tQQ(this,options);
+                    })
+                },
+                qZone:function(jq,options){
+                    return jq.each(function(){
+                        qZone(this,options);
+                    })
+                },
+                sinaWeibo:function(jq,options) {
+                    return jq.each(function(){
+                        sinaWeibo(this,options);
+                    });
+                },
+                doubanShare:function(jq,options) {
+                    return jq.each(function(){
+                        doubanShare(this,options);
+                    });
+                },
+                weixinShare:function(jq,options){
+                    return jq.each(function(){
+                        weixinShare(this,options);
+                    });
+                }
+            }
+
+
+            //分享地址
+            var qzone = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={url}&title={title}&pics={pic}&summary={content}';
+            var sina = 'http://service.weibo.com/share/share.php?url={url}&title={title}&pic={pic}&searchPic=false';
+            var tqq = 'https://connect.qq.com/widget/shareqq/index.html?url={url}&showcount=0&desc={content}&summary=&title={title}&pics=&style=203&width=19&height=22';
+            var douban = 'http://www.douban.com/share/service?href={url}&name={title}&text={content}&image={pic}';
+            var weixin = 'http://qr.liantu.com/api.php?text={url}';
+        })(jQuery, window, document);
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            var shareUrl = window.location.href;//这里注意请使用线上地址随便什么地址，本地是没有效果的
+            var content = "这里就是分享的文章的简单介绍";
+            var title = "标题不用说了吧";
+            var pic = "默认文章第一张图片";
+
+            new QRCode(document.getElementById("shareUrl"), {
+                text: shareUrl,
+                width: 100,
+                height: 100,
+            });  // 设置要生成二维码的链接
+
+            $(".share-tx-weChat").mouseover(function(){
+                $("#layerWxcode").show();
+            }).mouseout(function(){
+                $("#layerWxcode").hide();
+            })
+            $(".share-qq").on("click",function(){
+                $(this).socialShare("tQQ", {
+                    url: shareUrl,
+                    title: title,
+                    content: content
+                });
+            })
+            $(".share-qzone").on("click",function(){
+                $(this).socialShare("qZone", {
+                    url: shareUrl,
+                    title: title,
+                    content: content,
+                    pic: pic
+                });
+            })
+            $(".share-xl-weiBo").on("click",function(){
+                $(this).socialShare("sinaWeibo");
+            })
+            $(".share-link-url").on("click",function(){
+                var input = document.getElementById("requestLink");
+                input.value = shareUrl; // 修改文本框的内容
+                input.select(); // 选中文本
+                document.execCommand("copy"); 
+                alert("复制成功");
+            })
+        });
+    </script>
+</body>
+</html> 
+
